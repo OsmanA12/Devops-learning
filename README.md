@@ -1,22 +1,15 @@
 # DevOps Learning Journey
 
-Welcome to your DevOps learning repository! This repository is designed to track your progress as you navigate through various modules of this DevOps bootcamp. It will serve as a central hub for all your notes, labs, and project work. Use this repository template and let's get started on your journey to becoming a DevOps Engineer!
+Welcome to my DevOps learning repository! This space is where I’ll be documenting my journey through various modules of this DevOps bootcamp. It’s my central hub for all my notes, hands-on labs, and project work. I’m thrilled to share this adventure with you and excited to dive deep into the world of DevOps. Let’s get started on this journey to becoming a DevOps Engineer! 🚀
 
-## Initial setup
-
-![UseTemplate](./images/UseTemplate.png)
--------
-![UseTemplate](./images/Createrepo.png)
 
 ## Repository Structure
 
-This repository is organized into multiple modules, each representing a core area of DevOps. You will find a dedicated folder for each module where you can store your notes, labs, and any other relevant materials.
+This repository is organized into multiple modules, each representing a core area of DevOps. You will find a dedicated folder for each module where  notes, labs, and any other relevant materials are stored.
 
 ## Sample Directory Structure
 
-Here's how your directory structure should look like as you progress through the bootcamp. This is an example of what your repository might look like after completing a few modules:
-
-Example layout for repo only. Yours could be different but this is inspiration. 
+Here's how my directory structure is organised as I progress through the bootcamp. This is an example of what my repository might look like after completing a few modules:
 
 ```bash
 devops-learning/
@@ -95,33 +88,20 @@ devops-learning/
 
 ### Modules
 
-- **Linux:** Learn the basics and advanced concepts of Linux, the backbone of many DevOps tools.
-- **Git:** Master version control using Git, a fundamental skill in DevOps.
-- **AWS:** Dive into Amazon Web Services and learn how to manage cloud infrastructure.
-- **Terraform:** Automate your infrastructure with Terraform, an Infrastructure as Code (IaC) tool.
-- **Kubernetes:** Explore Kubernetes for container orchestration.
-- **Docker:** Learn about containerization using Docker.
-- **CI/CD:** Implement Continuous Integration and Continuous Deployment pipelines.
-- **Networking:** Understand the fundamentals of networking and how it applies to DevOps.
+- **Linux:** I’ll start by learning both the basics and advanced concepts of Linux, which is the backbone of many DevOps tools.
+- **Git:** Mastering version control with Git is crucial, so I'll focus on becoming proficient in this essential DevOps skill.
+- **AWS:** I plan to dive into Amazon Web Services to get a solid grasp of managing cloud infrastructure.
+- **Terraform:** I’ll automate my infrastructure using Terraform, a powerful Infrastructure as Code (IaC) tool.
+- **Kubernetes:** Exploring Kubernetes will be key for understanding container orchestration.
+- **Docker:** I’ll delve into containerisation with Docker to streamline application deployment.
+- **CI/CD:** Implementing Continuous Integration and Continuous Deployment pipelines will be a core focus.
+- **Networking:** I’ll build a strong foundation in networking to see how it integrates with DevOps practices.
 
-## How to Use This Repository
-
-- Make sure to have a GitHub account first
-- Use the repo template and make your own repo from this into your GitHub Account
-- Clone your repo locally and work on it.
-
-## Best Practices
-
-- Stay Organised: Keep your notes and labs organized in their respective module folders.
-- Commit Often: Make regular commits to ensure you are tracking your progress effectively.
-
-- Share Your Progress: Create LinkedIn posts about your journey and share your repository link. Don’t forget to tag @CoderCo!
-
-- Ask for Help: If you get stuck, don't hesitate to reach out to the community or your mentors
 
 ## License
 
-This repository is licensed under the MIT License. Feel free to use it as a template for your learning journey.
+This repository is licensed under the MIT License. 
 
 ## Contact
-For any questions or support, reach out to CoderCo or ask in our discussion forums.
+Email:osmanalbakri54@gmail.com
+Linkedin: https://www.linkedin.com/in/osman-albakri-a8a57a292/
