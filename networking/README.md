@@ -12,7 +12,6 @@ A **computer network** is a group of devices connecting to share information. Fo
 - **LAN (Local Area Network)**: Small and covers a limited area (e.g., home Wi-Fi). 🏠
 - **WAN (Wide Area Network)**: Covers a wider area (e.g., school Wi-Fi). 🌍
 
----
 
 #### **Importance of Computer Networks**
 - **Foundation**: Enables communication between devices.
@@ -20,7 +19,6 @@ A **computer network** is a group of devices connecting to share information. Fo
 - **Internet Functionality**: Critical for browsing, streaming, and communication. 📡
 - **Application Support**: Backbone for app connectivity and data transfer.
 
----
 
 ### **Networking in DevOps**
 
@@ -30,7 +28,6 @@ Networking plays a key role in DevOps due to reasons such as:
 - **Management**: Crucial for monitoring and managing infrastructure.
 - **Optimization**: Enhances troubleshooting, performance, and scalability. ⚙️
 
----
 
 ### **LAN and WAN**
 
@@ -38,7 +35,6 @@ These are both types of networks:
 - **LAN (Local Area Network)**: Connects devices to share resources and work in small areas like homes and offices. 🏢
 - **WAN (Wide Area Network)**: Connects devices across the globe (e.g., the internet). A WAN contains multiple LANs and works in wider areas like cities and countries. 🌆
 
----
 
 ### **Key Networking Components**
 
@@ -107,7 +103,6 @@ Protocols ensure that the data is understandable. They govern data transmission,
 **Why are Ports & Protocols Important?**
 Without ports and protocols, our communications would be a mess, as they facilitate communication between devices.
 
----
 
 ### **TCP (Transmission Control Protocol)**
 
@@ -123,7 +118,6 @@ TCP is like a postman of the internet, ensuring that data sent from one device r
 - Provides error checking and flow control to prevent congestion and maintain communication flow.
 - Supports bidirectional communications (e.g., emails, text messages).
 
----
 
 ### **UDP (User Datagram Protocol)**
 
@@ -137,7 +131,6 @@ UDP is a simple protocol used to send and receive data without establishing a co
 **Functions**:
 - Suitable for real-time applications where speed is more important than reliability (e.g., video streaming, online gaming, DNS, VPN). 🎮
 
----
 
 ### **TCP vs. UDP**
 
@@ -161,7 +154,6 @@ A communication model provides a standard framework that simplifies how devices 
 - **Simplified Network Equipment Management**: Upgrading network equipment is easier with a standard model.
 - **Decoupled Innovation**: Innovation can occur in each layer independently without affecting the entire system.
 
----
 
 ### **The 7 Layers of the OSI Model**
 
@@ -195,7 +187,6 @@ A communication model provides a standard framework that simplifies how devices 
    - Provides network services directly to end-user applications.
    - Handles web browsing, file transfers, and emails.
 
----
 
 ### **TCP/IP Model**
 
@@ -242,7 +233,6 @@ Sender sends a **POST request** to an HTTP web page.
 
 **Layer 1**: Where the data gets converted into a physical signal.
 
----
 
 **POV of Receiver**
 
@@ -316,7 +306,6 @@ Multiple records are composed in a single zone file, each record contains specif
 | **NS**               | Name server Record                                                                                      |
 | **Data**             | The actual information corresponding to the record type (e.g., IP address for an A record)              |
 
----
 
 ### Different Types of Records
 
@@ -328,7 +317,6 @@ Multiple records are composed in a single zone file, each record contains specif
 | **MX**     | Specifies the mail server responsible for receiving email for the domain.                                  | Ensures efficient and reliable email delivery for the domain.       |
 | **TXT**    | Allows domain administrators to insert any text into DNS, commonly used for verification and SPF data.     | Useful for domain verification and improving email security (SPF).  |
 
----
 
 **A Records**: Maps a domain name to an IPv4 address.  
 **Example**: google.com → 216.58.204.79
@@ -345,14 +333,13 @@ Multiple records are composed in a single zone file, each record contains specif
 **TXT Records**: Store text information for a domain. The main purpose is to verify that you actually own the domain.  
 **Example**: google.com → "v=spf1 include.com ~all"
 
----
+
 
 ### How DNS Works: DNS Process
 
 **DNS Resolution**:  
 The process of converting domain names to IP addresses and it involves multiple steps and servers.
 
----
 
 **DNS Hierarchy and Distribution**:
 
@@ -373,7 +360,6 @@ The process of converting domain names to IP addresses and it involves multiple 
 
 This hierarchy ensures that when you type a website into the browser, it can quickly find the right IP address to connect, no matter where the domain is hosted.
 
----
 
 ### DNS Resolution Process
 
@@ -394,7 +380,6 @@ This hierarchy ensures that when you type a website into the browser, it can qui
 
 **Stage 7**: The IP address is sent back to the resolver, and the web server is connected.
 
----
 
 ### Importance of DNS Resolution for DevOps Engineers
 
@@ -402,7 +387,6 @@ This hierarchy ensures that when you type a website into the browser, it can qui
 - Essential for troubleshooting DNS issues.
 - Critical for configuring and managing network services like VPCs and new networks.
 
----
 
 ### Domain Registrar vs DNS Hosting Provider
 
@@ -422,7 +406,6 @@ If the registrar and the provider is the same company, the DNS zone is automatic
 
 If they are different then you will need to provide the Nameserver information on where your DNS zone is already hosted. And this process is called:
 
----
 
 ### **DNS Query Process** 🔍
 
@@ -438,7 +421,6 @@ If they are different then you will need to provide the Nameserver information o
 **Stage 8**: Resolver sends the DNS records for the address to the Name Server.  
 **Stage 9**: The address is sent back then the client is now able to connect with the domain! 🌐  
 
----
 
 ### **DNS Tool: Networking Debugging** 🛠️
 
@@ -467,7 +449,6 @@ Domain Information Groper. A flexible and much more detailed than nslookup for c
 **dig +short**  
 Gives a more simplified answer.  
 
----
 
 
 ### **Practical Exercise** 📘
@@ -517,7 +498,6 @@ Routing process - Routers determine the best path, Use routing tables to make de
 - **Ensure reliable application delivery**  
 - **Crucial for managing complex infrastructures**  
 
----
 
 #### **Static vs Dynamic Routing** 🚦
 
@@ -531,7 +511,6 @@ Uses algorithms and complex protocols to find the best path for data to route.
 Flexible and adaptable to network changes.  
 Automatically adjusted routes.  
 
----
 
 ### **Common Routing Protocols** 🔄
 
@@ -571,7 +550,7 @@ A method for allocating IP addresses and routing IP packets.
 **Format**: `IP_address/prefix_length`  
 The prefix_length indicates the bits that are the network part of the IP address.  
 
----
+
 
 ### **Binary 1s and 0s** 🔢
 
@@ -593,13 +572,13 @@ Fundamental language of computers and networking systems.
 
 Each bit in an 8-bit binary number corresponds to a power of 2. If the bit is 1, that power of 2 is "on" and added to the total value. In this case, all bits are set to 1, so all powers of 2 are included, and their sum is 255.  
 
----
+
 
 ### **How to Convert a Binary into a Decimal**
 
 <img width="1261" alt="Screenshot 2024-09-19 at 23 49 07" src="https://github.com/user-attachments/assets/94410556-192b-4171-b805-4a7a15f9b5e7">
 
----
+
 
 ### **How to Convert an IP Address into Binary**
 <img width="1151" alt="Screenshot 2024-09-19 at 23 58 20" src="https://github.com/user-attachments/assets/7f3cffe2-6d66-4bdf-b1e9-80ba280df2b2">
@@ -614,7 +593,7 @@ Using the table I achieved the value `00001010.00000000.00000000.00000001`.
 **Convert 255.0.0.0 to binary**:  
 Using the table I achieved `11111111.00000000.00000000.00000000`.  
 
----
+
 
 ### **Calculating Subnets** 🔢
 
