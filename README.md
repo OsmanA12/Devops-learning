@@ -9,38 +9,77 @@ This repository is organised into multiple modules, each representing a core are
 ### 📁 Repository Structure
 Here's how my directory structure is set up as I progress through the bootcamp.
 
-my-devops-journey/
+devops-learning/
 ├── Linux/
 │   ├── notes/
+│   │   ├── linux-basics.md
+│   │   ├── file-system.md
+│   │   └── shell-scripting.md
 │   ├── labs/
+│   │   ├── lab1-basic-commands.md
+│   │   ├── lab2-file-permissions.md
+│   │   └── lab3-shell-scripting.md
 │   └── projects/
+│       ├── project1-custom-script/
+│       │   ├── script.sh
+│       │   └── README.md
+│       └── project2-linux-server-setup/
+│           ├── setup-notes.md
+│           └── README.md
+│
 ├── Git/
 │   ├── notes/
+│   │   ├── version-control-basics.md
+│   │   ├── branching-and-merging.md
+│   │   └── git-workflow.md
 │   ├── labs/
+│   │   ├── lab1-initial-commit.md
+│   │   ├── lab2-branching.md
+│   │   └── lab3-merge-conflicts.md
 │   └── projects/
+│       ├── project1-git-repo-setup/
+│       │   ├── init-repo.sh
+│       │   └── README.md
+│       └── project2-collaboration-workflow/
+│           ├── collaboration-notes.md
+│           └── README.md
+│
 ├── AWS/
 │   ├── notes/
+│   │   ├── aws-overview.md
+│   │   ├── ec2-basics.md
+│   │   └── s3-setup.md
 │   ├── labs/
+│   │   ├── lab1-ec2-instance.md
+│   │   ├── lab2-s3-bucket.md
+│   │   └── lab3-vpc-setup.md
 │   └── projects/
-├── Docker/
+│       ├── project1-hosting-on-ec2/
+│       │   ├── deployment-notes.md
+│       │   └── README.md
+│       └── project2-static-website-on-s3/
+│           ├── website-files/
+│           └── README.md
+│
+├── Terraform/
 │   ├── notes/
+│   │   ├── terraform-basics.md
+│   │   ├── providers-and-modules.md
+│   │   └── state-management.md
 │   ├── labs/
+│   │   ├── lab1-terraform-setup.md
+│   │   ├── lab2-infrastructure-as-code.md
+│   │   └── lab3-terraform-modules.md
 │   └── projects/
-├── Kubernetes/
-│   ├── notes/
-│   ├── labs/
-│   └── projects/
-├── CI-CD/
-│   ├── notes/
-│   ├── labs/
-│   └── projects/
-├── Networking/
-│   ├── notes/
-│   └── labs/
-├── Bash/
-│   ├── notes/
-│   ├── labs/
-│   └── projects/
+│       ├── project1-infrastructure-deployment/
+│       │   ├── main.tf
+│       │   ├── variables.tf
+│       │   └── README.md
+│       └── project2-multi-environment-setup/
+│           ├── dev/
+│           ├── prod/
+│           └── README.md
+│
 └── README.md
 
 
