@@ -13,6 +13,7 @@ CI/CD is a powerful tool for developers that DevOps can't live without.
 
 ## **CI/CD Pipeline**  
 <img width="693" alt="Screenshot 2024-11-19 at 23 51 50" src="https://github.com/user-attachments/assets/8e8703e8-b358-4e3f-89ab-eb8c35fd676d" />
+
 A series of steps that your code goes through from the moment it is committed:  
 - **Commit change**: Push your code and commit it. Developers make changes and push them to GitHub.  
 - **Trigger build**: The commit triggers an automated build process.  
