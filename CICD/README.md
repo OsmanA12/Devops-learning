@@ -37,36 +37,43 @@ A series of steps that your code goes through from the moment it is committed:
 
 ### **GitLab CI/CD**  
 <img width="129" alt="Screenshot 2024-11-20 at 00 06 16" src="https://github.com/user-attachments/assets/eb80e758-75de-4665-9bbd-7fce9f41df25" />
+
 - Integrated directly into GitLab, making it user-friendly.  
 - Strong integration with GitLab’s version control system.  
 
 ### **Jenkins** 
 <img width="129" alt="Screenshot 2024-11-20 at 00 10 42" src="https://github.com/user-attachments/assets/13d11735-5b01-4199-bece-b9ae242daae9" />
+
 - A widely popular open-source CI/CD tool.  
 - Extremely powerful with the right plugins but can be complex.  
 
 ### **CircleCI** 
 <img width="129" alt="Screenshot 2024-11-20 at 00 10 48" src="https://github.com/user-attachments/assets/5fdccfd8-25a5-4a44-961a-c2aa56bd2068" />
+
 - Cloud-based, known for its speed and simplicity.  
 - Integrates well with GitHub and Bitbucket for building, testing, and deploying.  
 
 ### **Travis CI** 
 <img width="129" alt="Screenshot 2024-11-20 at 00 14 04" src="https://github.com/user-attachments/assets/42e6431f-146a-4864-80d7-cec87be432b5" />
+
 - Cloud-based, integrates well with GitHub.  
 - Loved for its simplicity and ease of use.  
 
 ### **GitHub Actions**  
 <img width="129" alt="Screenshot 2024-11-20 at 00 16 03" src="https://github.com/user-attachments/assets/45e8d428-897e-473c-89ee-966145edee82" />
+
 - Integrated directly into GitHub, making it reliable and popular.  
 
 ## **Role of CI/CD in DevOps** ♾️  
 <img width="348" alt="Screenshot 2024-11-20 at 00 24 14" src="https://github.com/user-attachments/assets/5fe8e470-5c81-45c7-8f58-a73757a0261f" />
+
 - CI/CD makes the process continuous.  
 - **Continuous integration**: Code is built and tested.  
 - **Release, deploy, and operate**: Automates building, ensuring proper compilation and dependency handling.  
 
 ## **How CI/CD fits into the DevOps architecture**  
 <img width="663" alt="Screenshot 2024-11-20 at 00 32 02" src="https://github.com/user-attachments/assets/bbba6335-35bd-4636-a6c5-62e87a09aca4" />
+
 ### **Source Control**  
 - Developers store and manage their code using tools like GitHub, GitLab, and Bitbucket.  
 - Enables collaboration without conflicts and maintains a history of changes.  
@@ -83,6 +90,7 @@ A series of steps that your code goes through from the moment it is committed:
 
 ## **GitHub Actions & CI/CD Workflows**  
 <img width="593" alt="Screenshot 2024-11-20 at 00 50 45" src="https://github.com/user-attachments/assets/4392d0a6-fe91-48d8-99cd-c093f0f5f1a9" />
+
 1. Developers write features or fix bugs and make changes to the codebase.  
 2. Commit changes to the repository. This triggers the **GitHub Actions** workflow, defined in a **YAML** file.  
 3. The workflow enters the CI pipeline, starting with building the code.  
@@ -100,6 +108,7 @@ A series of steps that your code goes through from the moment it is committed:
 
 ## **What is YAML?**  
 <img width="633" alt="Screenshot 2024-11-20 at 01 18 56" src="https://github.com/user-attachments/assets/4d7c58fc-d316-4a83-8462-3f6209206346" />
+
 - YAML stands for **YAML Ain’t Markup Language**.  
 - It is essential for tools like Kubernetes and CI/CD.  
 - YAML is a human-readable data serialization standard often used for configuration files.  
@@ -308,6 +317,7 @@ Secrets keep your code a ‘secret’ 🔑
 
 ## How secrets are managed in workflows? 🛠️
 <img width="266" alt="Screenshot 2024-11-21 at 01 34 41" src="https://github.com/user-attachments/assets/14b6c44c-bd7b-4a46-b199-bfabb6f8ec46" />
+
 Secrets are managed in a `$` variable which accesses the secrets in our workflow.  
 For example on line 12 & 13.
 
