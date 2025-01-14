@@ -1,4 +1,5 @@
 # **CI/CD** 🚀
+<img width="348" alt="Screenshot 2024-11-20 at 00 24 14" src="https://github.com/user-attachments/assets/5fe8e470-5c81-45c7-8f58-a73757a0261f" />
 
 ## **What is CI/CD?**
 CI/CD is a powerful tool for developers that DevOps can't live without.  
@@ -11,6 +12,7 @@ CI/CD is a powerful tool for developers that DevOps can't live without.
   - **Continuous Delivery**: Ensuring the software can be reliably released at any time.
 
 ## **CI/CD Pipeline**  
+<img width="693" alt="Screenshot 2024-11-19 at 23 51 50" src="https://github.com/user-attachments/assets/8e8703e8-b358-4e3f-89ab-eb8c35fd676d" />
 A series of steps that your code goes through from the moment it is committed:  
 - **Commit change**: Push your code and commit it. Developers make changes and push them to GitHub.  
 - **Trigger build**: The commit triggers an automated build process.  
@@ -33,30 +35,37 @@ A series of steps that your code goes through from the moment it is committed:
 # **Popular CI/CD Tools** 🛠️
 
 ### **GitLab CI/CD**  
+<img width="129" alt="Screenshot 2024-11-20 at 00 06 16" src="https://github.com/user-attachments/assets/eb80e758-75de-4665-9bbd-7fce9f41df25" />
 - Integrated directly into GitLab, making it user-friendly.  
 - Strong integration with GitLab’s version control system.  
 
-### **Jenkins**  
+### **Jenkins** 
+<img width="129" alt="Screenshot 2024-11-20 at 00 10 42" src="https://github.com/user-attachments/assets/13d11735-5b01-4199-bece-b9ae242daae9" />
 - A widely popular open-source CI/CD tool.  
 - Extremely powerful with the right plugins but can be complex.  
 
-### **CircleCI**  
+### **CircleCI** 
+<img width="129" alt="Screenshot 2024-11-20 at 00 10 48" src="https://github.com/user-attachments/assets/5fdccfd8-25a5-4a44-961a-c2aa56bd2068" />
 - Cloud-based, known for its speed and simplicity.  
 - Integrates well with GitHub and Bitbucket for building, testing, and deploying.  
 
-### **Travis CI**  
+### **Travis CI** 
+<img width="129" alt="Screenshot 2024-11-20 at 00 14 04" src="https://github.com/user-attachments/assets/42e6431f-146a-4864-80d7-cec87be432b5" />
 - Cloud-based, integrates well with GitHub.  
 - Loved for its simplicity and ease of use.  
 
 ### **GitHub Actions**  
+<img width="129" alt="Screenshot 2024-11-20 at 00 16 03" src="https://github.com/user-attachments/assets/45e8d428-897e-473c-89ee-966145edee82" />
 - Integrated directly into GitHub, making it reliable and popular.  
 
 ## **Role of CI/CD in DevOps** ♾️  
+<img width="348" alt="Screenshot 2024-11-20 at 00 24 14" src="https://github.com/user-attachments/assets/5fe8e470-5c81-45c7-8f58-a73757a0261f" />
 - CI/CD makes the process continuous.  
 - **Continuous integration**: Code is built and tested.  
 - **Release, deploy, and operate**: Automates building, ensuring proper compilation and dependency handling.  
 
 ## **How CI/CD fits into the DevOps architecture**  
+<img width="663" alt="Screenshot 2024-11-20 at 00 32 02" src="https://github.com/user-attachments/assets/bbba6335-35bd-4636-a6c5-62e87a09aca4" />
 ### **Source Control**  
 - Developers store and manage their code using tools like GitHub, GitLab, and Bitbucket.  
 - Enables collaboration without conflicts and maintains a history of changes.  
@@ -72,6 +81,7 @@ A series of steps that your code goes through from the moment it is committed:
 # **GitHub Actions** 🧑‍💻
 
 ## **GitHub Actions & CI/CD Workflows**  
+<img width="593" alt="Screenshot 2024-11-20 at 00 50 45" src="https://github.com/user-attachments/assets/4392d0a6-fe91-48d8-99cd-c093f0f5f1a9" />
 1. Developers write features or fix bugs and make changes to the codebase.  
 2. Commit changes to the repository. This triggers the **GitHub Actions** workflow, defined in a **YAML** file.  
 3. The workflow enters the CI pipeline, starting with building the code.  
@@ -88,6 +98,7 @@ A series of steps that your code goes through from the moment it is committed:
 # **Introduction to YAML Syntax** 📝
 
 ## **What is YAML?**  
+<img width="633" alt="Screenshot 2024-11-20 at 01 18 56" src="https://github.com/user-attachments/assets/4d7c58fc-d316-4a83-8462-3f6209206346" />
 - YAML stands for **YAML Ain’t Markup Language**.  
 - It is essential for tools like Kubernetes and CI/CD.  
 - YAML is a human-readable data serialization standard often used for configuration files.  
@@ -102,7 +113,11 @@ A series of steps that your code goes through from the moment it is committed:
 **_CICD Hands On_**  
 I started off by creating a new directory which contains the YAML file. When using a YAML file, ensure it ends with `.yaml` or `.yml` so that the system knows it's a YAML file. Here it's called `yaml-syntax.yaml`.  
 
+<img width="692" alt="Screenshot 2024-11-20 at 01 37 48" src="https://github.com/user-attachments/assets/bdd13413-bd4c-4fd8-9aea-1d477245e0b1" />
+
+
 Here I created simple key-values, lists, and nested elements to show how they can be used. ✨  
+<img width="467" alt="Screenshot 2024-11-20 at 01 46 30" src="https://github.com/user-attachments/assets/ed32da5c-5fbb-4b85-b91e-9be3b66d063a" />
 
 
 ### **_Workflow Syntax & Structure_**  
@@ -120,15 +135,21 @@ steps: Individual tasks that run in a sequence. Each step can either run command
 ```
 GitHub Workflows has a marketplace of reusable and community-created actions, some by GitHub and others by organisations like AWS and more. 💡  
 
+<img width="653" alt="Screenshot 2024-11-20 at 02 03 20" src="https://github.com/user-attachments/assets/6eaabb12-d1b5-48cf-a9de-8c4a5853b08d" />
+
 
 ### **_Events, Jobs, and Steps_**  
-
+<img width="677" alt="Screenshot 2024-11-20 at 02 07 37" src="https://github.com/user-attachments/assets/6f2c97c2-f28e-4259-a6da-86f3a607821c" />
 
 ### **_Building a Simple CI Pipeline_**  
 - First, I started by creating a new folder named `.github/workflows`, which is where any CICD is run. This is the folder for it.  
-- Then I added a `ci.yaml`, which will run my pipeline.  
+- Then I added a `ci.yaml`, which will run my pipeline.
+
+<img width="175" alt="Screenshot 2024-11-20 at 02 22 06" src="https://github.com/user-attachments/assets/78f389e7-ae6d-4cc5-85b3-41d597f34add" />
 
 Then I configured my pipeline, making it a simple pipeline that has the right build, runs on the right operating system, and prints out a “Hello everyone”.  
+
+<img width="341" alt="Screenshot 2024-11-20 at 02 28 28" src="https://github.com/user-attachments/assets/4db62324-cdc8-439c-ac3c-3f7ea485b2b9" />
 
 Then I did:  
 ```bash
@@ -138,7 +159,7 @@ git push
 ```
 
 And this was a success, here is the outcome! 🎉  
-
+<img width="1440" alt="Screenshot 2024-11-20 at 23 26 27" src="https://github.com/user-attachments/assets/eeb11fb9-7d9b-4d03-8e85-aea705e155ed" />
 
 ### **_Advanced GitHub Actions_**  
 
@@ -148,6 +169,8 @@ And this was a success, here is the outcome! 🎉
 Let you control when a job or step should run based on a certain criteria.  
 **_Expressions_**  
 Allow you to perform calculations, manipulate strings, and let you do more within your pipeline. 🔄  
+
+<img width="590" alt="Screenshot 2024-11-20 at 23 35 38" src="https://github.com/user-attachments/assets/89ca15f4-3a1b-411f-8203-48c471aa1947" />
 
 **Condition:** Here the test is being run IF it is successful.  
 **Expression:** Here a message is being printed with the branch name, and this is how you reference a branch name within GitHub.  
@@ -166,8 +189,14 @@ Runs multiple test cases or suites simultaneously across different environments 
 
 Here I just created a simple python app that prints out “Hello, World!”.
 
+<img width="494" alt="Screenshot 2024-11-20 at 23 54 11" src="https://github.com/user-attachments/assets/1a7ff3bf-609a-4282-a887-98a838d86f0b" />
+
+<img width="494" alt="Screenshot 2024-11-20 at 23 59 58" src="https://github.com/user-attachments/assets/df1435d9-4e4d-4347-8825-3ca82f249896" />
+
+
 After this I created a pipeline with different jobs running on different python versions.
 
+<img width="717" alt="Screenshot 2024-11-21 at 00 12 17" src="https://github.com/user-attachments/assets/cc809063-e0d3-41cc-a6c3-f6c72dd59955" />
 
 ## Code breakdown 🧑‍💻
 
@@ -186,7 +215,6 @@ on: [push]
 ```
 - The workflow triggers whenever you push changes to the repository.
 
----
 
 ### **Jobs Section**
 #### **Job Name**
@@ -267,6 +295,8 @@ The job consists of multiple sequential steps:
 - The `if: success()` condition ensures this step only runs if the job is successful.
 
 And it was successful! 🎉
+<img width="717" alt="Screenshot 2024-11-21 at 00 36 22" src="https://github.com/user-attachments/assets/7c960830-b500-4cfc-9b5b-9c4032e2a1a8" />
+
 
 
 # Managing secrets in Github Actions 🔒
@@ -276,7 +306,7 @@ And it was successful! 🎉
 Secrets keep your code a ‘secret’ 🔑
 
 ## How secrets are managed in workflows? 🛠️
-
+<img width="266" alt="Screenshot 2024-11-21 at 01 34 41" src="https://github.com/user-attachments/assets/14b6c44c-bd7b-4a46-b199-bfabb6f8ec46" />
 Secrets are managed in a `$` variable which accesses the secrets in our workflow.  
 For example on line 12 & 13.
 
@@ -284,12 +314,24 @@ For example on line 12 & 13.
 
 To configure secrets in Github, head over to settings, and scroll to secrets. Here you can add whatever secrets and variables you like to keep your sensitive data safe.
 
+<img width="707" alt="Screenshot 2024-11-21 at 01 01 31" src="https://github.com/user-attachments/assets/80627516-139b-4feb-86a2-1d59626fb3b0" />
+
+
 Here I configured a pipeline just to test with secrets. First, I created a normal secret. And it was successful. ✅
+
+<img width="707" alt="Screenshot 2024-11-21 at 01 07 10" src="https://github.com/user-attachments/assets/befb9167-f365-4f9d-8d61-314a18161a80" />
+
+<img width="707" alt="Screenshot 2024-11-21 at 01 08 49" src="https://github.com/user-attachments/assets/9a6aa568-4586-4e1d-8f15-3c7d91d579d0" />
 
 Then I created a variable for testing purposes and it also succeeded. 👍
 
+<img width="707" alt="Screenshot 2024-11-21 at 01 11 24" src="https://github.com/user-attachments/assets/73513327-ebb0-4f2d-972d-960b95f8ba47" />
+
+
+<img width="707" alt="Screenshot 2024-11-21 at 01 12 34" src="https://github.com/user-attachments/assets/61227796-b3a3-4f1a-9a52-17158f6f8140" />
 
 # Reusable CICD 🔁
+
 
 ## Creating Custom actions 🛠️
 Reusable units of code that automate specific tasks in your CICD pipeline.  
@@ -302,11 +344,12 @@ You can create these actions in Javascript (uses node.js), Docker (containers), 
 - Ensures efficiency.
 
 ## Example
+
 Here we are using a custom action by owner and repository name (repo@v1).  
 We also pass our input value to the custom action.
 
-
 # CI/CD in the real world 🌍
+<img width="266" alt="Screenshot 2024-11-21 at 01 34 41" src="https://github.com/user-attachments/assets/902da15e-05c1-46d7-97e3-35e40fc8fd10" />
 
 ## Automated testing and linting 🧪
 Both of these help us catch errors early and keep our codebase clean and reliable.
@@ -406,24 +449,7 @@ When you don’t have the correct permission in a repository to perform certain 
 Very hidden and specific tool that allow workflows to be started manually via the use of github actions ui.  
 Here is an example:
 
-```yaml
-name: Coderco Manual CI
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-    inputs:
-      python-version:
-        description: "Choose Python version"
-        required: true
-        default: 3.7
-        type: choice
-        options:
-          - 3.7
-          - 3.8
-          - 3.9
-```
+<img width="265" alt="Screenshot 2024-11-21 at 19 05 19" src="https://github.com/user-attachments/assets/9c5efabe-ba96-4991-b0af-204018f025a2" />
 
 #### Code breakdown  
 **Name:**
@@ -464,7 +490,12 @@ For certain deployments, if you want to trigger deployments to various environme
 Here I created a new yaml file called **manual** and created a pipeline.  
 Then I created a trigger to ensure my app can run on different python versions.
 
+<img width="664" alt="Screenshot 2024-11-21 at 19 41 18" src="https://github.com/user-attachments/assets/8f7af94c-f21b-4c37-85c7-e640fc26fb2e" />
+
 And it was successful. ✅
 
+<img width="664" alt="Screenshot 2024-11-21 at 19 43 21" src="https://github.com/user-attachments/assets/a626232c-8fa9-42d3-8c83-bd5f25c697c5" />
+
 ### CICD Challenge 🚀
+<img width="575" alt="Screenshot 2024-11-21 at 19 01 22" src="https://github.com/user-attachments/assets/e2db740b-e34f-4de2-b033-210c5f2c4381" />
 
