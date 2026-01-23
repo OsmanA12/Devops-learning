@@ -342,30 +342,30 @@ To add our new user to the admin/sudo group to perform super user permissions, w
 
 And now we can test that it actually allows our new user to perform  sudo activities 
 
+<img width="791" height="175" alt="Screenshot 2025-10-13 095012" src="https://github.com/user-attachments/assets/807d94f0-93f2-4fd6-9d68-d93e91b942a4" />
 
 We can also read the `root` directory using a sudo user as seen in the above. Also to remove a user from the sudo group we run the command  `sudo deluser newuser sudo`
 
 ## Creating & managing groups
 
-
-
+<img width="539" height="1750" alt="Screenshot 2025-10-13 095451" src="https://github.com/user-attachments/assets/db8ada16-6016-4cd9-a94d-fcd25faf2603" />
 
 
 To create a new group, we run the command `sudo groupadd` and as we can see the group we created appears under the groups section
 
-
-
+<img width="927" height="196" alt="Screenshot 2025-10-13 100044" src="https://github.com/user-attachments/assets/c4389c07-1475-4338-b65b-55e9de090faf" />
 
 To add a user to a group we run the same command as previously and to verify this we can run the `groups` command 
 
+<img width="927" height="196" alt="Screenshot 2025-10-13 100044" src="https://github.com/user-attachments/assets/dd4cbc2c-e70d-407c-af06-7a6e67f7bd13" />
 
 To remove a user from a group, we run the command `sudo gpasswd -d (username) (groupname)` and we can verify that this works as seen in the above
 
-
+<img width="582" height="141" alt="Screenshot 2025-10-13 100804" src="https://github.com/user-attachments/assets/106a8e57-5bcb-4d31-accf-79615e9e937b" />
 
 To delete groups we can run the `sudo groupdel (groupname)` and we can confirm this is deleted by using `grep` to find our specific word in our directory
 
-
+<img width="1052" height="236" alt="Screenshot 2025-10-13 102348" src="https://github.com/user-attachments/assets/aebd5f52-e164-4ec7-a159-93332b1f40f7" />
 
 
 When creating a new group, it also wouldn't allow you to copy another group name as seen in the above. To add a user to multiple groups in one go, we can separate it using a , while listing the groups as seen in the above
@@ -373,6 +373,7 @@ When creating a new group, it also wouldn't allow you to copy another group name
 
 ## File permissions
 
+<img width="3762" height="1829" alt="Screenshot 2025-10-13 104720" src="https://github.com/user-attachments/assets/1d203484-4ce9-49b5-9609-f01acc5e1b1d" />
 
 
 ### What are file permissions?
@@ -394,54 +395,70 @@ When creating a new group, it also wouldn't allow you to copy another group name
 
 **This can also be represented in binary, octal and string format**
 
+<img width="2756" height="1232" alt="Screenshot 2025-10-13 125844" src="https://github.com/user-attachments/assets/b0265149-fee3-4f90-b477-d6254456df66" />
 
 - Binary is a set of digits that can in the form 0s & 1s that has a base 2
 - Octal is a compact representation using numbers
 
 ## CHMOD Calculator
 
+<img width="1187" height="1106" alt="Screenshot 2025-10-13 143202" src="https://github.com/user-attachments/assets/7b370eba-ee7a-4e92-841d-9f5fe410b14a" />
+
 https://chmod-calc-five.vercel.app/
 
 We can use the chmod calculator to calculate the binary or octal required to give our file the correct permissions it needs
 
+<img width="801" height="349" alt="Screenshot 2025-10-13 144441" src="https://github.com/user-attachments/assets/ef076708-bcf5-4548-a931-32c8c1cf386e" />
 
 - Here we created our example.txt file and we can use `ls -l` to show the permissions of the file
 - We can see that our permissions here is `rw-r--r--` which means our user got read and write permissions but not executable ones where as our group and other have only read permissions
 - We can change the permissions using the `chmod` command and he we allowed our user to have executable permissions `(+x)`, allowed our group to have read permissions `(+r)` and reduce the write permissions for others `(-x)`
 
 
+<img width="631" height="171" alt="Screenshot 2025-10-13 150440" src="https://github.com/user-attachments/assets/c392035f-0c42-456b-bd54-d7330af9d9b5" />
 
 - We can also use octal to shift our permissions, here we used `750` which has given our user full permissions, given our group read and executable permissions, and took away all permissions for others.
 
 ## Small introduction to bash scripting with chmod
 
+<img width="840" height="138" alt="Screenshot 2025-10-13 151723" src="https://github.com/user-attachments/assets/6ebd327e-df96-45de-876b-848bc2f30f94" />
+
+
 - Here I used `vim set_permissions.sh` which created the file and allowed me to input the above in it
 - In this script I wanted to add executable permissions to the user of `example.txt` and want it to display “Permissions changed for example.txt”
 
+<img width="769" height="170" alt="Screenshot 2025-10-13 160435" src="https://github.com/user-attachments/assets/f93043e2-fb09-4762-ae11-3f6b4f88f8c0" />
 
 - When I try to run the script using `./` it would give a permission denied and this is due to the file not having executable permissions
-Once executable permissions are set using `chmod +x` our file is now executable
+- Once executable permissions are set using `chmod +x` our file is now executable
 
-
-
+<img width="567" height="98" alt="Screenshot 2025-10-13 160446" src="https://github.com/user-attachments/assets/16887b57-dec5-41fe-98a3-e6a35d50ee6c" />
 
 - We can now run our script and as we can see in the above it gives us our output
 
 ### Grouping permissions
+
+<img width="823" height="232" alt="Screenshot 2025-10-13 160639" src="https://github.com/user-attachments/assets/33af9c46-7428-43e2-ab84-18c99fad8ae2" />
 
 - We can also group permissions for the user, group or other categories using the `= `
 - As we can see in the above we gave user and group read and write permissions where as for others we gave them only read
 
 ## Changing file/directories ownership for users & groups
 
+<img width="722" height="176" alt="Screenshot 2025-10-14 122657" src="https://github.com/user-attachments/assets/bdafda97-f056-4cf6-8aa5-5eaa9b54bc65" />
+
+
 - To change user ownership of a file we can use the `chown` command with super user permissions and this will change the ownership of for the user of our file
 
+<img width="739" height="174" alt="Screenshot 2025-10-14 122814" src="https://github.com/user-attachments/assets/0268c6b9-ed4b-4714-9d63-5d21b8f8b346" />
 
 - To change group ownership of our file we can use the `chgrp` command with superuser permissions and this will change the group ownership of our file
 
+<img width="678" height="176" alt="Screenshot 2025-10-14 123332" src="https://github.com/user-attachments/assets/55acbfdb-1acb-422b-b9c6-c167796e2d16" />
 
 - We can also change the user and group ownership using `chown (username):(groupname)` and this will change both in one go
 
+<img width="723" height="204" alt="Screenshot 2025-10-14 123740" src="https://github.com/user-attachments/assets/7db8a8cd-613d-4767-b964-42a51c5157ac" />
 
 - To change the user & group ownership of a directory, we will need to use `chown -R` as we want it to be recursive and as we can see in the above this works
 
@@ -454,10 +471,13 @@ Once executable permissions are set using `chmod +x` our file is now executable
 
 ### Main types of standard streams
 
+<img width="1082" height="477" alt="Screenshot 2025-10-14 125734" src="https://github.com/user-attachments/assets/0d2c144e-9b52-4d19-a9e4-af08f9e70056" />
+
 
 
 ### Standard Input (stdin)
 
+<img width="604" height="160" alt="Screenshot 2025-10-17 111307" src="https://github.com/user-attachments/assets/6af44a6d-7e35-4c3d-9c99-b8b9bcdadc5c" />
 
 - The stream that provides input to commands
 - When you type something in this is what passes it into the linux file system or the program
@@ -467,35 +487,45 @@ Once executable permissions are set using `chmod +x` our file is now executable
 
 ### Standard output(stdout)
 
+<img width="568" height="143" alt="Screenshot 2025-10-17 111730" src="https://github.com/user-attachments/assets/5b7cf140-0b4d-43d6-a841-b11a0e2ac8e1" />
+
+
 - This is when commands send an output 
 - For example when we run `ls` to list content, the results are shown on our terminal
 - We can also see in the above that the `echo` command prints out an output to us
 
 ### Standard error
 
+<img width="487" height="85" alt="Screenshot 2025-10-17 112122" src="https://github.com/user-attachments/assets/e9cae8ac-a25a-41f1-9cdb-b1c0d4b2fef7" />
+
+
 - This stream is used for error messages and displays it on the terminal
 - For example, in the above when we use `ls` to list the content of a non existent directory, we get an error received
 
+<img width="705" height="56" alt="Screenshot 2025-10-17 112327" src="https://github.com/user-attachments/assets/a483f051-1079-4242-a933-224c16b69815" />
 
 - We can also redirect error messages to file using `2>` as seen in the above
 
 
-
+<img width="778" height="155" alt="Screenshot 2025-10-17 112756" src="https://github.com/user-attachments/assets/7d21035a-8371-4e9f-b719-0a855157ce60" />
 
 - We can also redirect error messages and output using `&>` as seen in the above and this prints the error along side with the output
+
+<img width="511" height="24" alt="Screenshot 2025-10-17 113709" src="https://github.com/user-attachments/assets/eb6d535f-ecc9-46cb-b267-68ec19efd183" />
 
 - `/dev/null` is a special file that discards all data written to it, the moment data is transferred to this file it is deleted
 - This is where you don’t want to see the content of the error message on your terminal
 - This will hide all error messages
 
-
-
+<img width="640" height="46" alt="Screenshot 2025-10-17 113800" src="https://github.com/user-attachments/assets/d6c85582-b13d-4497-a5bd-ee6e36f8b05f" />
 
 We can also discard error and output messaging using `&>` directing it to /dev/null
 
 
 ## Environment Variables
 
+
+<img width="3803" height="1808" alt="Screenshot 2025-10-17 114526" src="https://github.com/user-attachments/assets/fe334b0a-bc19-48fe-9aec-d29035ca2bc3" />
 
 
 ### What are environment variables?
@@ -505,6 +535,7 @@ We can also discard error and output messaging using `&>` directing it to /dev/n
 - They store configuration settings and important system information
 - Play crucial role in defining the environment in which processes run
 
+<img width="2270" height="571" alt="Screenshot 2025-10-17 114920" src="https://github.com/user-attachments/assets/e5adc2c5-8499-47a6-9335-2a80a330803c" />
 
 - In the above we can see a few examples of different environment variables and what they are
 
@@ -513,42 +544,61 @@ When setting environment variables there are 2 ways to do it
 - **Temporary setting**
 This is where you set an environment variable using the `export` command and it temporarily sets the environment variable in the terminal session you are currently using
 
+<img width="2184" height="852" alt="Screenshot 2025-10-17 115325" src="https://github.com/user-attachments/assets/c6103363-941d-4dac-8b2a-1532945bf8f7" />
+
 
 Here is an example of the temporary environment variable `JAVA_HOME` being created using the export command
 
 - **Permanent setting**
 
+<img width="3271" height="1995" alt="Screenshot 2025-10-17 115729" src="https://github.com/user-attachments/assets/676834a3-584b-487e-98c7-28e8a0697fbc" />
 
 
 When setting a permanent environment variable, it will be stored under our `.bashrc` or `.zshrc` configurations file and we will need to use the `echo` command while setting it under the shel configuration files
 
+<img width="2642" height="646" alt="Screenshot 2025-10-17 121155" src="https://github.com/user-attachments/assets/330fc104-4e94-4676-9c6b-33fdfaae834d" />
+
 
 We can use the `printenv` command to view the different environment variables in our system
+
+<img width="421" height="87" alt="Screenshot 2025-10-17 121413" src="https://github.com/user-attachments/assets/2a8b09f4-da20-42d8-9181-6173dea2f5c3" />
 
 
 - We can also view the different environments using `echo$(environment)`
 - $ is used to dereference the variable which allows us to access its value
 
 
+<img width="477" height="70" alt="Screenshot 2025-10-17 121936" src="https://github.com/user-attachments/assets/47380ef0-5e3c-47b1-81b8-20311afbc682" />
+
 Here we created a temporary environment variable with the value “Hello World” and as we can see when we use `echo` on our variable it gives us our output
 
+<img width="867" height="302" alt="Screenshot 2025-10-17 121854" src="https://github.com/user-attachments/assets/e2b6219a-e380-481e-a7b1-3d7b2e43641a" />
 
 - Here we are making a permanent environment variable
 - To this we first configure our .bashrc or .zshrc (here it was .bashrc as I am using killacoda) by running the command `vim .bashrc`
 - Once entered in, I added my variable using the `export` command and setting my values to it
+
+<img width="420" height="107" alt="Screenshot 2025-10-17 122509" src="https://github.com/user-attachments/assets/5c163dac-1b67-43fc-9ccd-284bc741ef74" />
 
 
 Once we saved our changes on our config file, we use the `source` command to permanently set it and as we can see it prints the value
 
 ### Modifying existing Environment Variables
 
+<img width="1466" height="130" alt="Screenshot 2025-10-17 123755" src="https://github.com/user-attachments/assets/cb03100c-d95f-45d0-9821-ee94dfa0a2b1" />
+
+
 - To create a new directory which falls under our environment variable we will need to use the `export` command
 - In the above we created the directory home/ubuntu and to do this we had to set PATH=$PATH which sets PATH to its current value alongside : which acts as a separator for the directories. Here we created the directory home/ubuntu and we can verify this worked by running echo $PATH
 
 ### Making a script which uses environment variables
 
+<img width="545" height="92" alt="Screenshot 2025-10-17 123126" src="https://github.com/user-attachments/assets/2a4ce046-6265-4b9c-b3cd-7690ae90f45d" />
+
 - First I ran the command `vim greet.sh` which created my file and allowed me to configure it
 - Then I inserted my script information and this script just greets the user to the host
+
+<img width="467" height="117" alt="Screenshot 2025-10-17 123808" src="https://github.com/user-attachments/assets/efd4cc6e-922a-4526-b392-306b99f4d9f2" />
 
 Once I saved the changes in my file, I added executable permissions to the file and ran the script using `./` and the script gives us a greeting
 
@@ -557,13 +607,18 @@ Once I saved the changes in my file, I added executable permissions to the file 
 ### What are aliases?
 - These are like nicknames for commands and can be very useful as it could save a lot time and boost productivity and inputting commands is being automated with a nickname
 
+<img width="514" height="260" alt="Screenshot 2025-10-17 125831" src="https://github.com/user-attachments/assets/f1c36201-7356-490a-90d5-ad83c1db9fdf" />
+
 
 We can view our current aliases using the `alias` and here we used `l` which is an alias for  `ls` 
+
+<img width="500" height="22" alt="Screenshot 2025-10-17 130015" src="https://github.com/user-attachments/assets/38f7c207-d4b9-4ecf-85c0-473ec47e17d5" />
 
 
 - We can set  aliases temporarily by using the command in the above
 - Here we set the alias `hello` to the value in the above
 
+<img width="548" height="84" alt="Screenshot 2025-10-17 125758" src="https://github.com/user-attachments/assets/e84dfe30-7083-43ae-ae30-194459fa30b7" />
 
 
 - To create a permanent alias we can `vim` into our `.bashrc` file and add our alias in
