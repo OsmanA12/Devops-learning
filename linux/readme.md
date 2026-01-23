@@ -1,12 +1,5 @@
 # Linux learning
 
-#    H1 – Title
-##   H2 – Main section
-###  H3 – Sub section
-#### H4 – Smaller section
-##### H5
-###### H6
-
 # Linux
 
 ## What is Linux?
