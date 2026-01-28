@@ -1,5 +1,7 @@
 # Azure
 
+<img width="600" height="311" alt="10-reasons-why-choose-azure-for-your-enterprise" src="https://github.com/user-attachments/assets/b34e2161-084e-42f8-b31d-9c84daf41611" />
+
 
 
 ### What is a server?
@@ -32,7 +34,10 @@ Multi-cloud: A company that uses a mix of cloud providers e.g. AWS & Azure
 
 ## Azure account setup
 
+<img width="1893" height="1932" alt="Screenshot 2025-09-12 095555" src="https://github.com/user-attachments/assets/c25ec281-e2b8-4573-867e-5db62d37c983" />
+
 Head over to Azure on google or desired browser and search for azure. Sign up using credentials and agree to the forms. Once all set up is done, you will be on the home page:
+
 
 
 Azure offers over 150 different services such as kubernetes or apache services, this is why it is a very popular cloud platform.
@@ -82,6 +87,8 @@ Azure offers over 150 different services such as kubernetes or apache services, 
 
 ### What is a Resource group
 
+<img width="820" height="852" alt="Screenshot 2025-09-15 121957" src="https://github.com/user-attachments/assets/45ac85b0-b0f2-4746-bbab-406a6333ff0a" />
+
 - Grouping of resourcing
 - Azure provides a bunch of resources in a group (e.g a VM with a database)
 - You can track these resources through this, easy to manage for a large number of users
@@ -120,6 +127,8 @@ Inbound and outbound
 
 ## VMSS ( Virtual Machine Scale Sets)
 
+<img width="500" height="300" alt="vmss" src="https://github.com/user-attachments/assets/896988a3-d9bf-4f44-baaf-2dd29c875091" />
+
 
 ### What is VMSS?
 - This lets you create and manage a group of load balanced virtual machines (VM) instances, the number of VM instances can automatically increase or decrease in response to demand or defined schedule
@@ -135,6 +144,8 @@ Inbound and outbound
 
 ### Virtual Network
 
+<img width="306" height="164" alt="images" src="https://github.com/user-attachments/assets/860d5803-9252-4767-a546-63f76bf0d015" />
+
 - A Virtual Network (VNet) in Azure is a logically isolated network that securely sonnets Azure resources and extends on-premises networks, Key features include:
    **Isolation**: Provides isolations at the network level for segmenting resources and controlling traffic
    **Subnetting**: Divides a VNet into subnets for resource organisation and traffic control
@@ -142,15 +153,23 @@ Inbound and outbound
 
 ### Subnets & CIDR
 
+<img width="1501" height="667" alt="Architecture-Virtual-Networks-Tutorial-Edureka-1" src="https://github.com/user-attachments/assets/f2c35a2e-f98c-4939-aefa-207e5462da07" />
+
 - **Subnets** - a subdivisions of a Virtual Network, allowing for better organisation and traffic management 
 - **CIDR (Classless Inter Domain Routing)** - represents IP address and their routing prefix, specifying the range of IP addresses for a network
 
 ### Routes & Route Tables
 
+<img width="225" height="225" alt="images (1)" src="https://github.com/user-attachments/assets/10e11c5e-282d-4592-96ee-6fb2aa6b3fbd" />
+
+
 - Routes dictate how network traffic is directed, specifying the destination and next hop
 - Route Tables are collections of routes associated with subnets, enabling custom routing rules
 
 ### Network Security Groups (NSGs)
+
+![1_QbMROyOcGp8AGqzrH7UguA](https://github.com/user-attachments/assets/41f11cc6-0fd7-4a12-b2e8-b9ab7d67df28)
+
 
 - NSGs are fundamental for Azure’s network security, allowing filtering of inbound and outbound traffic. Key aspects include:
   **Rules**: NSGs define allowed or denied traffic based on source, destination, port and protocol
@@ -159,12 +178,18 @@ Inbound and outbound
 
 ### Application Security Groups (ASGs)
 
+![application-security-group-azure-thumbnail](https://github.com/user-attachments/assets/c9917a52-48c1-420d-a77d-e2a79d91e738)
+
+
 - ASGs group Azure virtual machines based on application requirements, simplifying network security:
   **Simplification**: ASGs allow defining rules based on application roles instead of individual IP addresses
  ** Dynamic Membership**: ASGs support dynamic membership based on tags or other attributes
   **Rule Association**: Security rules can be associated with ASGs for intuitive and scalable network security management
 
 ### Azure App Gateway & WAF
+
+<img width="600" height="600" alt="download" src="https://github.com/user-attachments/assets/73429094-b4b8-4a02-beee-88f68576228d" />
+
 
 - Azure Application Gateway is a web traffic load balancer that enables you to manage and route traffic to your web applications, Key features include:
   **Load Balancing**: Distributes incoming traffic across multiple servers to ensure no single server is overwhelmed
@@ -173,12 +198,17 @@ Inbound and outbound
 
 ### Azure Load Balancer
 
+<img width="600" height="315" alt="download (1)" src="https://github.com/user-attachments/assets/6d36bf11-ecb7-4ca4-8137-896c9b0daa0f" />
+
+
 - Azure load balancer distributes incoming network traffic across multiple servers to ensure no single server is overwhelmed. Key features:
   **Load Balancing Algorithms**: Supports different algorithms for distributing traffic such as round-bin and least connections
   **Availability sets**: Works seamlessly with availability sets to ensure high availability
   **Inbound and Outbound Traffic**: Balances both inbound and outbound traffic
 
 ### Azure DNS
+
+<img width="600" height="315" alt="download (2)" src="https://github.com/user-attachments/assets/2257d820-2124-4e43-a3c2-7e059b3081d9" />
 
 
 - Azure DNS is a scalable and secure domain hosting service. It provides name resolution using the Microsoft Azure Infrastructure. Key features:
@@ -188,6 +218,9 @@ Inbound and outbound
 
 
 ### Azure Firewall
+
+<img width="600" height="315" alt="download (3)" src="https://github.com/user-attachments/assets/eb05c361-5f11-446a-9afb-91d7b0c9d15a" />
+
 
 - Azure firewall is a managed, cloud-based network security service that protects your Azure virtual network resources. Key features include:
   **Stateful Firewall**: Allows or denies traffic based on rules and support inspection
@@ -202,11 +235,16 @@ Inbound and outbound
 
 ### VNet Gateway
 
+<img width="601" height="351" alt="717c41fa-d86" src="https://github.com/user-attachments/assets/e2f78ea5-9dd0-4a17-8ac3-426120064859" />
+
+
 - VNet Gateway enables secure communication between on-premises networks and Azure Virtual Networks. Key features include:
   **Site to Site VPN**: Connect on-premises networks to Azure over an encrypted VPN tunnel
   **Point to Site VPN**: Enables secure remote access to Azure resources
 
 ### VPN Gateway
+
+<img width="293" height="172" alt="images (2)" src="https://github.com/user-attachments/assets/b06ac509-7e38-43a2-a8bc-1bbe72df516c" />
 
 
 - Azure VPN Gateway provides secure, site to site connectivity between your on-premises network and Azure. Key features include:
@@ -216,8 +254,9 @@ Inbound and outbound
 
 ## Azure Storage
 
-
 ### Azure Blob Storage
+
+<img width="330" height="153" alt="images (3)" src="https://github.com/user-attachments/assets/0649adb8-6b63-4751-acbe-d5b8a010ee5b" />
 
 - A cloud-based object storage solution provided by Azure. This is designed to store and manage large amounts of unstructured data, such as documents, images, videos and other types of binary and text data. Blobs are organised into containers and each blob is assigned a unique URL for access
 - This is used when you need to store and retrieve large amounts of unstructured data. It is suitable for scenarios like serving images or videos to a website, storing backups and handling data for analytics and data processing
@@ -225,6 +264,7 @@ Inbound and outbound
 
 ### Azure File Storage
 
+![azure_file_storage-removebg-preview](https://github.com/user-attachments/assets/36eb99bf-ab5f-4d8f-a193-e2a9a97a9c03)
 
 - A fully managed file share service in the cloud. It provides the Server Message Block (SMB) protocol for sharing files across applications and VMs in the Azure cloud
 - Useful for applications that require file access such as config files or data files
@@ -233,12 +273,17 @@ Inbound and outbound
 
 ### Azure Tables
 
+<img width="234" height="216" alt="images (4)" src="https://github.com/user-attachments/assets/0558f38f-7809-4432-8cf5-92077fa5b190" />
+
+
 - A NoSQL data store service provided by Azure. It stores large amounts of semi-structured data and allows for fast and efficient querying using a key-based access model. Data is organised into tables and each table can store billion of entities
 - Used Azure Tables when you need a highly scalable NoSQL data store for semi-structured data with simple key-based access
 - Suitable for scenarios like storing configuration data, user profiles and other data where a key-value or key attribute data model is appropriate
 - An aws doesn’t have a direct equivalent for Azure tables, Amazon DynamoDB is a similar NoSQL database service that provides key-value and document storage
 
 ### Azure Queue Storage
+
+<img width="238" height="212" alt="images (5)" src="https://github.com/user-attachments/assets/e9f677e3-3e7e-4c23-9650-0ff4d58b022f" />
 
 - A message queue service that allows decoupling of components in a distributed application
 - Provides a reliable way to store and retrieve messages between application components ensuring asynchronous (when things happen independently without waiting for each other) communication
