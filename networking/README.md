@@ -1,5 +1,8 @@
 ### **Networking Fundamentals 🌐**
 
+![Understanding-the-Eight-Essential-Components-of-a-Network-image](https://github.com/user-attachments/assets/73e1c80d-7a34-4f13-a662-a04f8d5dde73)
+
+
 ---
 
 #### **Overview of Computer Networks**
@@ -9,7 +12,7 @@ A **computer network** is a group of devices connecting to share information. Fo
 **Purpose**: Communication, information, and resource sharing.
 
 **Different Network Types**:
-- **LAN (Local Area Network)**: Small and covers a limited area (e.g., home Wi-Fi). 🏠
+- **LAN (Local Area Network)**: Small and covers a limited area (e.g., home Wi-Fi).
 - **WAN (Wide Area Network)**: Covers a wider area (e.g., school Wi-Fi). 🌍
 
 
@@ -159,6 +162,9 @@ A communication model provides a standard framework that simplifies how devices 
 
 <img width="1123" alt="Screenshot 2024-09-15 at 23 43 09" src="https://github.com/user-attachments/assets/6aa5ae81-630f-4a00-8454-3df78ab681cb">
 
+![images](https://github.com/user-attachments/assets/dd6f1e5b-ceef-4cbe-a335-3a35e30ebf2f)
+
+
 1. **Application Layer**:
    - Transmits raw bit streams over a physical medium.
    - Deals with the hardware connection (cables, switches, network interface cards).
@@ -193,6 +199,9 @@ A communication model provides a standard framework that simplifies how devices 
 <img width="637" alt="Screenshot 2024-09-16 at 00 33 41" src="https://github.com/user-attachments/assets/dff8c174-4812-4d69-9815-a78f6ff8e271">
 
 The backbone of the internet, consisting of four layers:
+
+
+![3 -Transmission-Control-Protocol-2](https://github.com/user-attachments/assets/702c7beb-0c7d-43fd-8951-3711a5967b5a)
 
 1. **Application Layer**:
    - Where network applications and their protocols operate (e.g., HTTP, TLS, DNS).
@@ -626,7 +635,58 @@ For the usable IP address you take 2 away from the total address (one for the ne
 64-1-1=62.  
 
 And the usable IP address would be `192.168.1.62`.  
-  
+
+## Addressing
+
+### IPv4 Addresses
+- Located at the internet layer of the TCP/IP suite, this layer is responsible for logical addressing
+- Are divided into five classes: A, B, C, D and E
+- Class E is experimental and not used in standard networking
+- Class D is used for a one-to-many communication process called ‘multi-casting’
+- Class A, B and C are used in standard networking
+- The difference between the 3 standard classes (A,B,C) is the number of available networks compared to the number of possible hosts per network
+
+<img width="559" height="247" alt="Screenshot 2025-12-09 134431" src="https://github.com/user-attachments/assets/b9037c19-7118-4e21-9e5f-e4ac57f067c0" />
+
+
+The first octets (eight bits) identify to which class an IP address is
+
+<img width="415" height="367" alt="Screenshot 2025-12-09 134619" src="https://github.com/user-attachments/assets/b33a0485-9213-4ef2-8005-d488a8dc1740" />
+
+
+Due to the allocation of IP addresses, a method used to make IP addresses more efficient was reserving a range of Class A, Class B & Class C for use on internal networks. An organisation's internal IP address structure is almost certainly allocated form one of these ranges:
+
+<img width="487" height="287" alt="Screenshot 2025-12-09 135047" src="https://github.com/user-attachments/assets/3cf1390e-e715-4212-9c1f-d6df89c0119f" />
+
+
+### The Loopback and APIPA Addresses
+- Loopback address: used for network troubleshooting, IP address refers the computer to itself
+- Automatic Private IP Address (APIPA): Self-assigned address when the client fails to get an address from a DHCP server (e.g. router)
+
+<img width="891" height="298" alt="Screenshot 2025-12-09 140138" src="https://github.com/user-attachments/assets/2630ede9-b5b1-41b1-b3f4-cb9f10cdccf1" />
+
+
+### Network ID, Host ID and Subnet mask
+IPv4 addresses are divided into two portions: the network identifier and the host identifier. Classes A, B and C have defined divisions between the network ID and host ID
+
+<img width="767" height="245" alt="Screenshot 2025-12-09 140605" src="https://github.com/user-attachments/assets/5b330c40-f407-4bfd-b1ad-96b846ed8853" />
+
+
+### IPv6
+IPv6 fixes many problems with IPv4.The biggest improvement is that it gives us way more IP addresses.
+An IPv6 address is 128 bits long, which means we get far more than IPv4. These addresses are also organised more efficiently. IPv6 improves routing and adds built-in security features like better encryption.
+IPv6 addresses are written in hexadecimal (base 16). They look more complicated but using hex actually makes them shorter and easier to read than writing all the bits.
+
+
+<img width="894" height="385" alt="Screenshot 2025-12-09 143121" src="https://github.com/user-attachments/assets/50546255-ef3e-49ff-9796-869d23ad5f90" />
+
+
+### Network Identities
+Nodes are devices that have an identity on a network, e.g server, workstation, phones. These are 3 different types of identities nodes might have:
+ 
+ <img width="885" height="326" alt="Screenshot 2025-12-09 143506" src="https://github.com/user-attachments/assets/4629028f-c53d-433a-b4c9-05d1223df3af" />
+
+**Media Access Control MAC Address**: physical address given to a device, operate at the Data Link Layer (Layer 2), displayed in hexadecimal
 
 ---
 
@@ -682,3 +742,4 @@ The practice of managing and configuring networks in a cloud environment, allowi
 - **Gateways**: Connect VPCs to the internet or other networks, enabling data flow and access.
 
 ---
+
