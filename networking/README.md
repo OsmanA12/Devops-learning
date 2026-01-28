@@ -162,6 +162,8 @@ A communication model provides a standard framework that simplifies how devices 
 
 <img width="1123" alt="Screenshot 2024-09-15 at 23 43 09" src="https://github.com/user-attachments/assets/6aa5ae81-630f-4a00-8454-3df78ab681cb">
 
+
+
 ![images](https://github.com/user-attachments/assets/dd6f1e5b-ceef-4cbe-a335-3a35e30ebf2f)
 
 
@@ -742,4 +744,5 @@ The practice of managing and configuring networks in a cloud environment, allowi
 - **Gateways**: Connect VPCs to the internet or other networks, enabling data flow and access.
 
 ---
+
 
