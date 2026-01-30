@@ -291,3 +291,79 @@ Inbound and outbound
 - Suitable for scenarios like handling background jobs, managing tasks asynchronously and facilitating communication between loosely coupled components 
 - The equivalent in AWS is Amazon Simple Queue Service (SQS) which provides a fully managed message queue service for decoupling components in a distributed system
 
+### Azure Container Registry (ACR)
+
+<img width="300" height="300" alt="31_container-registry 9ac93f2e9f" src="https://github.com/user-attachments/assets/16aebe80-e07d-4734-a549-e949e6c07b4c" />
+
+### What is ACR?
+- A private container image registry in Azure. It stores and manages Docker/container images 
+- Like Dockerhub but Azure
+
+### Why is it used
+- Security & Access control
+  Private by default, Integrates with Azure AD, RBAC and Managed Identities
+- Native Azure integration
+  Works seamlessly with AKS, Azure App service, Azure container instances and Azure pipelines
+- Performance and reliability
+  Images are stored close t your azure workloads - faster pulls and less dependency on public registries
+- Enterprise features
+  Supports image scanning and more
+
+### What it needs to function
+- Azure Container Registry resource
+- Authentication method
+  Azure AD
+	Managed Identity
+	Service Principal
+- Container tooling
+
+## Azure Container Apps (ACA)
+
+<img width="600" height="598" alt="download (4)" src="https://github.com/user-attachments/assets/4236ebce-f872-4195-9a1a-fcd39ab4a124" />
+
+### What is Azure Container Apps?
+- A fully managed, serverless container platform for running containerised applications without managing servers or kubernetes directly 
+
+### Why is it used?
+- No infrastructure management
+  Azure handles nodes, scaling, patching and orchestration - you focus purely on the app
+- Built-in autoscaling
+  Scales based on HTTP traffic, events or CPU/memory including scale-to-zero
+- Microservices & APIs friendly
+  Ideal for APIs, background jobs, event driven workloads and lightweight microservices
+- Kubernetes-powered, simplified
+  Runs kubernetes under the hood but abstracts away K8s complexity
+- Cost-efficient
+  Pay only for what you use, great for workloads with spiky or unpredictable traffic
+
+### What it needs
+- Container image
+- Authentication to pull images
+- Container App environment (Azure managed)
+
+## Azure Kubernetes Service (AKS)
+
+<img width="600" height="315" alt="download (5)" src="https://github.com/user-attachments/assets/744db560-9dc9-49b6-9a58-156b3a76ba20" />
+
+### What is Azure Kubernetes Service (AKS)?
+- Azure’s managed Kubernetes, giving you full control over container orchestration using kubernetes
+
+### Why is it used?
+- Full kubernetes control
+  Ideal when you need custom networking, storage, security or advanced workloads
+- Scalability and reliability
+  Handles large-scale production workloads with self-healing and auto-scaling
+- Industry-standard orchestration
+  Kubernetes skills are portable across cloud providers and on-prem
+- Advanced ecosystem
+  Supports tools like Ingress Controller, Helm, ArgoCD, Prometheus, grafana etc
+- Fine-grained configuration
+  More control over networking, node pools, security policies and resource limits
+
+### What it needs
+- AKS cluster (control plane managed by Azure)
+- Worker nodes (VMs)
+- Container images (usually from ACR)
+- Kubernetes knowledge
+
+
